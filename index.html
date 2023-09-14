@@ -1,10 +1,144 @@
-<!DOCTYPE html>
 
+<!doctype html>
 <html>
+        <head>
+            
+            <meta charset="utf-8" />
+            <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>My portfolio</title>
+            
+            <link rel="stylesheet" href="normalize.css">
 
-<body>
-    <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages. s</p>
-</body>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="stylesheet" type="text/css" href="portfolio.css">
+
+        </head>
+
+    <body>
+
+
+    <div id="navigator-bar">
+        
+        <div class="flexbox-item"> <a href="#aboutme">About me</a> </div>
+        <div class="flexbox-item"> <a href="#projects">Projects</a> </div>
+        <div class="flexbox-item"> <a href="#contactme">contact me</a> </div>
+        
+    </div>
+
+     <section class="hero">
+        <div class="container">
+            <img src="Andy.jpeg">
+            <h1> Hi! I'm Andy and I'm a front-end developer</h1>
+
+        </div>
+
+
+
+     </section>
+
+     <section id="aboutme" class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+
+            </div>
+            <div class="aboutme-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor leo at massa feugiat, et tempor sapien lobortis. Nam dictum, lacus eu laoreet aliquam, ipsum lacus facilisis velit, ut lacinia metus quam quis nisl. Phasellus quis arcu in augue porttitor sagittis. Mauris faucibus turpis lectus, a semper nunc porta at. Nullam feugiat vitae ligula eget efficitur. Praesent sed libero ullamcorper, hendrerit erat in, ultricies elit. 
+            
+                <p>Nam ornare dui eu mi bibendum egestas. Maecenas velit ipsum, aliquam at metus commodo, sodales accumsan purus. Maecenas convallis arcu sit amet libero porta, ac fermentum quam aliquet. Nulla ex metus, aliquam at facilisis et, accumsan vel magna. Vestibulum rutrum eu tortor et hendrerit. Proin ut sapien orci. Aliquam erat volutpat. </p>
+                Curabitur molestie felis ut libero ornare vestibulum. Aenean sii id, varius leo. Nullam ac sapien eu nulis erat, eget porta erat. Fuscelit. Cras mattis ipsum viverra purus imperdiet lacinia. Aenean tempor sem eget dolor ullamcorper, at congue nisl tristique. Fusce non lectus venenatis, scelerisque arcu non, suscipit orci. Vivamus vulputate lectus eget odio ultrices, sed malesuada tellus fermentum. Phasellus tempus ipsum eu ultricies lobortis.</p>
+     
+                <p> Im familiar with HTML, CSS, and javascript</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="project">
+                <h2>Projects</h2>
+                <div class="projects">
+
+                    <div class="Utrecht-project">
+                        <div class="text">
+                            <h3 class="project-name">Utrecht Facts</h3> 
+                            <div class="content">
+                                <p>A HTML project about some facts about Utrecht.</p>
+                            </div>
+
+                            <a class="button" href="/Users/andyc/Desktop/complete web developer course/1-html/utrechtwebsite/Utrecht_facts.html" target="bank"> View Project</a>
+                               
+                        </div>
+                    </div>
+
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC News Clone</h3> 
+                        <div class="content">
+                            <p>This project is a clone of the BBC news website from the Web Dev 3.0 course</p>
+                        </div>
+
+                        <a class="button" href="/Users/andyc/Desktop/complete web developer course/1-html/utrechtwebsite/Utrecht_facts.html" target="bank"> View Project</a>
+                           
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </section>
+
+        <section id="contactme" class="contact">
+            <h2>Contact</h2>
+            <p>Use this form to get in touch. I would love to hear from you</p>
+
+            <form class="contact-form">
+
+                <div class="contact-details">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="yourname" placeholder="Your name">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Reason for your message">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Your email address">
+
+                </div>
+
+                <div class="message">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" rows="15"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    This site &copy; 2023 Andy Cao
+                </div>
+                <div class="social-media">
+                    <a href=""> <i class="fa fa-facebook-official"></i></a>
+
+                    <a href=""><i class="fa fa-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+
+
+        </footer>
+
+    
+    </body>
 
 </html>
