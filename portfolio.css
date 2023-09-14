@@ -150,7 +150,7 @@ h1 {
     position: relative;
 
     border-radius: 10px;
-    background-image: url("/Users/andyc/Desktop/complete web developer course/1-html/utrechtwebsite/utrecht_domtoren_klein.jpg");
+    background-image: url("utrecht_domtoren_klein.jpg");
     margin: 20px;
     background-size: cover;
     background-position: center;
@@ -163,7 +163,7 @@ h1 {
     background: white;
     position: relative;
     border-radius: 10px;
-    background-image: url("/Users/andyc/Desktop/complete web developer course/2-CSS/portfolio assignment/bbcnews_logo.svg.png");
+    background-image: url("bbcnews_logo.svg.png");
     margin: 20px;
     background-size: cover;
     background-position: right;
