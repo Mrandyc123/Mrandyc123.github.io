@@ -141,12 +141,11 @@ h1 {
     height: 400px;
     background: white;
     position: relative;
-
     border-radius: 10px;
     background-image: url("utrecht_domtoren_klein.jpg");
     margin: 20px;
     background-size: cover;
-    background-position: center;
+    background-position: left;
 
 }
 
@@ -157,6 +156,19 @@ h1 {
     position: relative;
     border-radius: 10px;
     background-image: url("bbcnews_logo.svg.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.cssmasterclass-project{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("masterclass_logo.png");
     margin: 20px;
     background-size: cover;
     background-position: right;
