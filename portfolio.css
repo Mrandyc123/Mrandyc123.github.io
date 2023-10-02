@@ -103,7 +103,7 @@ h1 {
    
     height: 400px;
     width: 350px;
-    background-image: url("working\ on\ macbook.jpg");
+    background-image: url("img/working\ on\ macbook.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -142,7 +142,7 @@ h1 {
     background: white;
     position: relative;
     border-radius: 10px;
-    background-image: url("utrecht_domtoren_klein.jpg");
+    background-image: url("img/utrecht_domtoren_klein.jpg");
     margin: 20px;
     background-size: cover;
     background-position: left;
@@ -155,7 +155,7 @@ h1 {
     background: white;
     position: relative;
     border-radius: 10px;
-    background-image: url("bbcnews_logo.svg.png");
+    background-image: url("img/bbcnews_logo.svg.png");
     margin: 20px;
     background-size: cover;
     background-position: center;
@@ -168,7 +168,7 @@ h1 {
     background: white;
     position: relative;
     border-radius: 10px;
-    background-image: url("masterclass_logo.png");
+    background-image: url("img/masterclass_logo.png");
     margin: 20px;
     background-size: cover;
     background-position: right;
@@ -186,7 +186,6 @@ h1 {
     margin: 20px;
     background-size: cover;
     background-position: center;
-
 }
 
 .text {
