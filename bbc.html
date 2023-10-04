@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BBC News clone </title>
+        <style type="text/css">
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #5a5a5a;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size:
+            }
+
+            #topbar {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            justify-content: center;
+            width: auto;
+            max-height: 200px;
+            
+            position: relative;
+            }
+
+            .topbarmenu{
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+
+            .bell{
+                padding: 15px;
+                border-right: 1px solid #cBCBCB;
+                object-fit: contain;
+                
+
+            }
+
+            .topbar-items {
+                padding: 15px 10px 15px 10px;
+                border-right: 1px solid #CBCBCB;
+                height: 100%;
+                
+            }
+
+            .topbar-links{
+                color: black;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            .bbc-logo{
+                display: ;
+                align-items: center;
+                border-right: 1px solid #CBCBCB;
+                height: 100%;
+                padding: 10px; 
+
+            }
+
+            .logo-sign{
+                padding: 10px 5px 6px 10px;
+            }
+
+            .signin-block {
+                border-right:  ;
+                border-right: 1px solid #CBCBCB;
+                padding: 15px 40px 0px 15px;
+
+            }
+            .Signin-text{
+                padding: 6px;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                
+                height: 100%;
+                margin-top: 0px;
+                font-size: 14px;
+            }
+
+            .no-underline {
+                text-decoration: none;
+            }
+            .text-bold {
+            font-weight: bold;
+            }
+
+            .text-black {
+                color: black;
+            }
+            a.hover-topbar {
+                text
+            }
+
+            .mx-auto {
+                margin-left: auto;
+                margin-right:auto:
+            }
+
+            #secondbar{
+                background-color: #BB1918;
+                width: auto;
+                font-size: 30px;
+                font-weight: 400;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .news-bar{
+                padding-right: 80px;
+                padding-top: 10px;
+            }
+
+            .localnews-bar {
+                margin-top: 10px;
+              
+            }
+
+            .localnews{
+                font-size: 28px; 
+                width: 250px;
+                text-decoration: none;
+                color: white;
+                border: 1px solid #BA4545 ;
+                padding: 8px 25px 0px 7px ;
+                
+            }
+            .searchbar {
+                background-color: #e4e4e4;
+                font-weight: 600; 
+                height: 25px ;
+                margin-top: 5px;
+                margin-left: 5px;
+                
+                font-size: 14px;
+            }
+
+            #thirdbar {
+                display: flex;
+                justify-content: center;
+                background-color: #A91617;
+                height: 30px;
+
+            }
+
+            .thirdbar-item {
+                height: 100%;
+                padding: 6px;
+            }
+
+            .third-barlinks {
+                color: white;
+                font-weight: 400;
+                text-decoration: none;
+                font-size: 16px;
+                padding-right: 5px;
+                border-right: 1px solid #BA4545 ;
+            }
+
+            .arrow2 {
+                padding-top: 7px;
+                color: white;
+            }
+
+            .main-container {
+                width: 1000px;
+                margin: auto;
+            }
+
+            .tech-headline {
+                
+                width: 933px;
+                height: 30px;
+                margin: auto;
+                margin-top: 12px;
+                
+            }
+
+            .tech-headline-text {
+                Border-bottom: 2px solid #a91717;
+                width: 85px;
+
+            }
+
+            article {
+                background-color: ;
+               
+                display: flex;
+                justify-content: center;
+                position: relative;
+                
+             
+                z-index: 10;
+                
+            }
+
+            #article-section{
+                display: flex;
+                
+                align-items: flex-start;
+                background-color: ;
+                margin-left: 210px;
+                
+                z-index: 5;
+            }
+            
+            #article-summary {
+                width: 500px;
+            }
+
+            #watch-listen{
+                width: 80%;
+
+                padding-left: 20px;
+                margin-left: 50px;
+                border-left: 1px solid grey;
+                margin-top: -50px;
+
+            }
+
+            
+            .article-side-image {
+                width: 90px;
+                height: 60px;
+
+            }
+
+            .side-article {
+                width: 180px;
+
+            }
+
+            .watch-listen-link{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .clock{
+            height: 15px;
+            position: relative;
+            top: 2px;
+
+            }
+
+            .topic-link {
+                text-decoration: none;
+                color: #a91717;
+                
+            }
+
+            .date {
+                padding-right: 10px;
+                padding-bottom: 2px;
+                color: #5a5a5a;
+                border-right: 1px solid #CCCCCC;
+                padding-left: 5px;
+
+            }
+            .clear {
+                clear: both;
+
+            }
+
+            .headline-title {
+                width: 1000px;
+                height: 80px;
+                display:flex;
+                padding-left: 30px;  
+                margin: auto         
+            }
+        
+            .asda-img {
+                padding-bottom: 10px;
+                position: relative;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header id="topbar">
+        
+            <div class="bbc-logo">
+                <img src=".//img/BBC-Logo-black.png" alt="logo bbc" style="height: 25px;">
+            </div>
+
+                <div class="logo-sign">
+                <svg xmlns="http://www.w3.org/2000/svg"  style="height: 25px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                    <Div class="signin-block">
+                    <a href="" class="Signin-text">Sign in</a>
+                    </Div>   
+            </div>
+
+                <div class="topbarmenu" >
+
+                    <div class="bell">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 15px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    </svg>
+                    </div>
+                
+                    <div class="topbar-items"><a href=""  class="topbar-links">News</a></div>
+                    <div class="topbar-items"><a href=""  class="topbar-links">Sport</a> </div>
+                    <div class="topbar-items"> <a href="" class="topbar-links">Weather</a></div>
+                    <div class="topbar-items"> <a href="" class="topbar-links">iPlayer</a></div>
+                    <div class="topbar-items"> <a href="" class="topbar-links" >TV</a></div>
+                    <div class="topbar-items"> <a href="" class="topbar-links">Radio</a></div>
+                    <div class="topbar-items"> <a href="" class="topbar-links" style="padding-right: 30px;">More</a></div>
+                    <div></div>
+                
+                <input type="text" class= "searchbar" placeholder="Search"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" width = "20px">
+                    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+                </svg>
+                
+                </div>   
+        </div>
+
+    </header>
+
+    <div id="secondbar">
+
+    <div class="news-bar">
+        NEWS
+    </div>
+    <div class="localnews-bar">
+        <a href="" class= "localnews"> Find local news </a> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" width = "25px" height = "25px">
+        <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+          </svg>
+          
+    </div>
+    </div>
+
+
+    <div id="thirdbar">
+
+        <div class="thirdbar-item"><a href=""  class="third-barlinks">Home</a></div>
+        <div class="thirdbar-item"><a href=""  class="third-barlinks">UK</a> </div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">World</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Business</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Politics</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Tech</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Science</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Health</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Education</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Entertainment & Arts</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks">Video & Audio</a></div>
+        <div class="thirdbar-item"> <a href="" class="third-barlinks" style="border: none">More</a></div>
+         <div class="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" height = "10px">
+            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+          </svg> 
+        </div>
+    </div>
+          
+
+        <main class="main-container">
+            <div class="tech-headline"> 
+                
+            <P class="tech-headline-text"><a href="" >Technology</a></p>
+            
+            </div>
+            <div class="headline-title">
+                <h1><a href="">Asda bug exposed payment details</a></h1>
+                </div>
+
+        <article>
+            
+           
+
+            <div id ="article-section">
+                <div id="article-summary">
+                <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years,
+                a security expert has revealed.</p>
+
+                <p><img class="clock" src="img/clock.png"> 
+                <span class="date border-right">19 January 2016</span>
+                <a class="topic-link " href="">Technology</a>
+                </p>
+
+                <p> <a href="">Survellance firm hit in hack attack</a></p>
+
+                <p><a href="">eBay flaw has existed for months</a></p>
+            </div>
+
+                    <img src="img/ASDA.png" alt="ASDA logo" height="200px" width="400px" > 
+
+                <div id="watch-listen">
+                    <h3>Watch/Listen</h3> 
+                    <img class= "article-side-image" src="img/article1.png">
+                        <div class="side-article">
+                        <p>
+                        <a class = "watch-listen-link" href> UK science chief backs blockchains</a>
+                        </p>
+                        <img class="clock" src="img/clock.png">
+                        <span class="date">19 January 2016</span>
+                        </div>
+                        <br>
+                        
+
+                       
+                    <img class="article-side-image" src="img/article2.png">
+                        <div class="side-article">
+                    
+                            <p><a class="watch-listen-link" href="">
+                            Drone register gives 'accountability'</a></p>
+                            <p><img class="clock" src="img/clock.png"> <span class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Technology</a>
+                            </p>
+                        </div>
+                        <br>
+                            
+                        <img class="article-side-image" src="img/article3.png">
+                            <div class="side-article">
+                    
+                                <p><a class="watch-listen-link" href="">SpaceX rocket explodes during landing</a></p>
+                                <p><img class="clock" src="img/clock.png"> <span class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Science &amp; Environment</a></p>
+                                
+                            </div>
+                            <br>
+                    </div>
+
+                    </div>
+                </div>
+        </article>
+
+        </section>
+
+       
+
+
+
+    </main>
+
+        
+
+    </body>
+
+
+    <!--
+        BBC clone site: https://eco-cdn.co.uk/webdeveloper2.0/content/2-css/bbc.html
+
+    -->
+
+
+</html>
