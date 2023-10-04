@@ -182,10 +182,23 @@ h1 {
     background: white;
     position: relative;
     border-radius: 10px;
-    background-image: url("img/javascript_logo.png");
+    background-image: url("img/reactiontester_logo.png");
     margin: 20px;
     background-size: cover;
     background-position: center;
+}
+
+.memorygame-project {
+
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("img/Memorygame_logo.png");
+    margin: 20px;
+    background-size: cover;
+    background-position: right;
 }
 
 .text {
